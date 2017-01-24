@@ -1,0 +1,72 @@
+body{
+	font-family: 'Calibri',sans-serif;
+}
+
+.f{
+	border: 1px solid blue;
+	width:500px;
+	margin:auto;
+	height:610px;
+}
+
+.f-header{
+	border-bottom: 1px solid blue;
+}
+.f-header h1{
+	margin:0;
+	font-size:22px;
+	text-align:center;
+	text-decoration:underline;
+	color:blue;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.row{
+	width:100%;
+	margin-top: 20px;
+}
+
+.row label{
+	margin-left:15px;
+}
+
+.row{
+	position:relative;
+}
+
+.l-req:after{
+	content:"*: ";
+}
+
+.i-req{
+	border:1px inset red;
+}
+
+.l-opt:after{
+	content:": ";
+}
+
+.i-req,.i-opt{
+	position:absolute;
+	right:50px;
+	width:250px;
+}
+
+.row-inner{
+	float:right;
+	margin-right: 110px;
+}
+
+.row-inner input{
+	margin-left:40px;
+}
+
+.btn{
+	float:right;
+	margin-right:50px;
+}
+#chkbox{
+	right:165px;
+}
+}

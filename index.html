@@ -1,0 +1,77 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+
+<div class="f">
+	<div class = "f-header">
+		<h1>Submit Form</h1>
+	</div>
+	<form name="fom">
+		<div class="row">
+		<label class="l-req">Username</label>
+		<input name="f-username" class="i-req" type="text">
+		</div>
+		<div class="row">
+		<label class="l-req">Password</label>
+		<input name="f-password" class="i-req" type="password">
+		</div>
+		<div class="row">
+		<label class="l-req">Confirm Password</label>
+		<input name="f-confpass" class="i-req" type="password">
+		</div>
+		<div class="row">
+		<label class="l-req">First Name</label>
+		<input name="f-fname" class="i-req" type="text">
+		</div>
+		<div class="row">
+		<label class="l-opt">Last Name</label>
+		<input name="f-lname" class="i-opt" type="text">
+		</div>
+		<div class="row">
+		<label class="l-req">Age</label>
+		<input name="f-age" class="i-req" type="text">
+		</div>
+		<div class="row">
+		<label class="l-req">Email</label>
+		<input name="f-email" class="i-req" type="text">
+		</div>
+		<div class="row">
+		<label class="l-req">Phone</label>
+		<input name="f-phone" class="i-req" type="text">
+		</div>
+		<div class="row">
+		<label class="l-opt">Fax</label>
+		<input name="f-fax" class="i-opt" type="text">
+		</div>
+		<div class="row">
+		<label class="l-req">Country</label>
+		<select name="f-country" class="i-req">
+			<option id="sel-none" name="sel-none">SELECT A COUNTRY</option>
+			<option id="sel-ph" name="sel-ph">Philippines</option>
+			<option id="sel-us" name="sel-us">United States</option>
+			<option id="sel-jpn" name="sel-jpn">Japan</option>
+		</select>
+		</div>
+		<div class="row">
+		<label class="l-req">Gender</label>
+		<div class="row-inner">
+		<input type="radio" id="radio-male" name="radio" value="male" checked>Male
+		<input type="radio" id="radio-female" name="radio" value="female">Female
+		</div>
+		</div>
+		<div class="row">
+		<label class="l-req">Disclaimer</label>
+		<input  class="i-req" type="checkbox" id="chkbox" name="chkbox" value="disclaimer">
+		</div>
+		<div class="row">
+		<input class="btn" type="button" value="Submit Form" onclick="submitForm();">
+		</div>
+	</form>
+		
+</div>
+
+</body>
+</html>
