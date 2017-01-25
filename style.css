@@ -69,4 +69,11 @@ body{
 #chkbox{
 	right:165px;
 }
+
+p.i-req,p.i-opt{
+	margin-top: -15px;
+}
+
+#info-message{
+	margin-left: 15px;
 }

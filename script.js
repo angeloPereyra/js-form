@@ -19,15 +19,24 @@ function submitForm(){
 		alert(message);
 		return;
 	}
-	alert("Validated!");
+	// eraseCookie("username");
+	// createCookie("username",username,1);
 }
+
+function loadForm()
+{
+	// username = readCookie("username");
+	// alert("username="+username)
+	document.getElementById("username").innerHTML = username;
+}
+
 
 function getValues(){ 
 	username = document.forms["fom"]["f-username"].value;
 	 password = document.forms["fom"]["f-password"].value;
 	 confpass = document.forms["fom"]["f-confpass"].value;
 	 fname = document.forms["fom"]["f-fname"].value;
-	 lname = document.forms["fom"]["f-lname"].value;
+	 // lname = document.forms["fom"]["f-lname"].value;
 	 age = document.forms["fom"]["f-age"].value;
 	 email = document.forms["fom"]["f-email"].value;
 	 fax = document.forms["fom"]["f-fax"].value;
@@ -99,4 +108,29 @@ function containsAlpha(str){
 
 function validEmail(str){
 	return (/[a-z]@[a-z].[a-z]/i.test(str));
+}
+
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function eraseCookie(name) {
+	createCookie(name,"",-1);
 }
